@@ -1,0 +1,20 @@
+{
+  "name": "parcel-static-site-starter",
+  "version": "1.0.0",
+  "description": "A simple toolchain to build your simple static website in the right way",
+  "main": "index.js",
+  "scripts": {
+    "reset": "rimraf dist && rimraf .cache",
+    "start": "rimraf dist && parcel serve src/index.html",
+    "build": "rimraf dist && parcel build src/index.html --public-url ./"
+  },
+  "author": "Naman Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.11"
+  }
+}
