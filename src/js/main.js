@@ -1,5 +1,3 @@
-console.log("cargado");
-
 const numbersLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 //TODO: I got this from the var_dump of my implementation on php, do a dinamic array flip to object! this is so ugly!
@@ -49,15 +47,12 @@ function solve(e) {
     }
     let solvedWord = '';
     let resultOffset = 0;
-    console.log(results);
+
     try {
         for (let i = 0; i < word.length; i++) {
-            console.log(i);
-            console.log(word);
             let encryptedCharacter = word[i];
             let attemptedDistance = results[resultOffset] + lettersNumbers[encryptedCharacter];
-            console.log(encryptedCharacter);
-            console.log(attemptedDistance);
+
             if (attemptedDistance > maxSize) {
                 attemptedDistance = attemptedDistance % maxSize;
             } else if (attemptedDistance === maxSize) {
@@ -65,14 +60,12 @@ function solve(e) {
             }
 
             solvedWord += numbersLetters[attemptedDistance];
-            console.log(solvedWord);
             resultOffset++;
             if (resultOffset >= results.length) {
                 resultOffset = 0;
             }
         }
     } catch (e) {
-        console.log(e);
         return false;
     }
 
