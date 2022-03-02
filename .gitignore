@@ -116,3 +116,4 @@ out
 
 #custom
 .DS_Store
+dist/
