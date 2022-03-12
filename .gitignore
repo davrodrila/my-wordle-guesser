@@ -117,3 +117,4 @@ out
 #custom
 .DS_Store
 dist/
+.idea/
