@@ -1,0 +1,1 @@
+{"version":3,"sources":["scss/main.scss"],"names":[],"mappings":"AAAA,MACE,aAGF,MACE","file":"main.3843db65.css","sourceRoot":"../src","sourcesContent":[".hide{\n  display: none;\n}\n\n.show {\n  display: block;\n}"]}
